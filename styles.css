@@ -1,0 +1,29 @@
+.container {
+  overflow: hidden;
+}
+.bar {
+  width: calc(100% / 40);
+  height: 100px;
+  background-color: rebeccapurple;
+  border: 1px black solid;
+}
+#bars {
+  margin-top: 200px;
+  display: flex;
+  margin-left: -2.5%;
+  align-items: flex-end;
+  min-height: 100px;
+  position: relative;
+  animation-name: scrollsmoothly;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollsmoothly {
+  from {
+    transform: translateX(calc(100% / 40));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
