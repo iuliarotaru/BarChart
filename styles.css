@@ -1,3 +1,4 @@
+/*--Style the bars --*/
 .container {
   overflow: hidden;
 }
@@ -19,6 +20,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+/*--Animation --*/
 @keyframes scrollsmoothly {
   from {
     transform: translateX(calc(100% / 40));
